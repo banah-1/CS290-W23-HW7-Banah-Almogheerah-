@@ -18,4 +18,4 @@
 9. Redirect the user to the login page or allow them to log in directly.
 
 
-#forget emil
+#email was forgotten must add it later
