@@ -20,3 +20,31 @@
 
 
 #email was forgotten must add it later
+
+feature 2
+
+Begin:
+Initi password and usernm variables
+Initi maxAttempts to a predefined value (e.g., 3)
+Initi attempts to 0
+
+WHILE attempts < maxAttempts DO
+   DISPLAY "Enter ur username: "
+   input usernm
+
+   DISPLAY "Enter your passwrd:"
+   input passwrd
+
+   IF usernm is valid AND passwrd is valid THEN
+   DISPLAY "Login successful"
+   BREAK
+   ELSE
+   DISPLAY "Login failed. Please try again."
+   INCREMENT attempts
+   END IF
+END WHILE
+
+   IF attempts >= maxAttempts THEN
+   DISPLAY "max login attempts reached. Account locked."
+   END IF
+END
